@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arabic Learning App</title>
+  
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+</head>
+
+<body>
+  <main>
+    <div class="app-container" id="mainMenu">
+      <div class="logo-section">
+        <div class="logo">
+          <svg viewbox="0 0 24 24">
+            <path d="M12 2L2 7V10C2 16 6 20.5 12 22C18 20.5 22 16 22 10V7L12 2M11 7H13V9H16V11H13V13H11V11H8V9H11V7Z" />
+          </svg>
+        </div>
+      </div>
+      <h1 class="app-title" id="appTitleArabic">تعلم العربية بسهولة</h1>
+      <p class="app-subtitle" id="appTitleIndonesian">Belajar Bahasa Arab dengan Mudah</p>
+      <div class="button-container">
+        <button class="main-button start-button" id="startButton">
+          <span>▶️</span>
+          <span id="startButtonText">Mulai Belajar</span>
+        </button>
+        <button class="main-button exit-button" id="exitButton">
+          <span>❌</span>
+          <span id="exitButtonText">Keluar</span>
+        </button>
+      </div>
+      <div class="group-label" id="groupText">Kelompok 9</div>
+      <div class="footer-text" id="footerText">Didesain untuk pembelajaran Bahasa Arab interaktif MA.</div>
+      <div class="placeholder-note">(Placeholder — dapat diisi manual di Notepad++.)</div>
+    </div>
+
+    <div class="chapter-menu" id="chapterMenu">
+      <h2 class="chapter-title">Pilih Bab Pembelajaran</h2>
+      <div class="chapters-grid">
+        <div class="chapter-card ch1" onclick="showChapter1()">
+          <div class="chapter-icon">👋</div>
+          <div class="chapter-name">التعارف</div>
+          <div class="chapter-placeholder">(Placeholder — link ke bab diisi manual di Notepad++.)</div>
+        </div>
+        <div class="chapter-card ch2" onclick="showChapter2()">
+          <div class="chapter-icon">🏠</div>
+          <div class="chapter-name">الأسرة والبيت</div>
+          <div class="chapter-placeholder">(Placeholder — link ke bab diisi manual di Notepad++.)</div>
+        </div>
+        <div class="chapter-card ch3" onclick="showChapter3()">
+          <div class="chapter-icon">🏫</div>
+          <div class="chapter-name">المدرسة</div>
+          <div class="chapter-placeholder">(Placeholder — link ke bab diisi manual di Notepad++.)</div>
+        </div>
+        <div class="chapter-card ch4" onclick="showChapter4()">
+          <div class="chapter-icon">🌅</div>
+          <div class="chapter-name">الحياة اليومية</div>
+          <div class="chapter-placeholder">(Placeholder — link ke bab diisi manual di Notepad++.)</div>
+        </div>
+        <div class="chapter-card ch5" onclick="showChapter5()">
+          <div class="chapter-icon">🎨</div>
+          <div class="chapter-name">الهوايات</div>
+          <div class="chapter-placeholder">(Placeholder — link ke bab diisi manual di Notepad++.)</div>
+        </div>
+        <div class="chapter-card ch6" onclick="showChapter6()">
+          <div class="chapter-icon">🍽️</div>
+          <div class="chapter-name">الطعام والشراب</div>
+          <div class="chapter-placeholder">(Placeholder — link ke bab diisi manual di Notepad++.)</div>
+        </div>
+        <div class="chapter-card ch7" onclick="showChapter7()">
+          <div class="chapter-icon">📝</div>
+          <div class="chapter-name">الامتحان</div>
+          <div class="chapter-placeholder">(Placeholder — link ke bab diisi manual di Notepad++.)</div>
+        </div>
+      </div>
+      <div class="navigation-buttons">
+        <button class="nav-button back-button" id="backButton">
+          <span>⬅️</span>
+          <span>Kembali ke Main Menu</span>
+        </button>
+        <button class="nav-button guide-button">
+          <span>📖</span>
+          <span>Panduan Belajar</span>
+        </button>
+      </div>
+      <div class="group-label" style="margin-top: 20px;">Kelompok 9</div>
+      <div class="placeholder-note" style="margin-top: 15px;">Semua konten akan diisi manual di Notepad++.</div>
+    </div>
+
+    <!-- Chapter 1 Content -->
+    <div class="chapter-content" id="chapter1">
+      <div class="chapter-header">
+        <img src="./assets/bab-1/cover.jpg" alt="" class="mb-3">
+        <h1 class="chapter-main-title">باب ١ – التعارف</h1>
+        <p class="chapter-subtitle">Bab 1 – Perkenalan</p>
+        <div class="chapter-note-space">
+          <div class="placeholder-note">(Ruang untuk catatan digital tambahan)</div>
+        </div>
+      </div>
+      <div class="content-sections">
+        <div class="content-card vocabulary-card">
+          <div class="card-header">
+            <div class="card-icon">📚</div>
+            <h3 class="card-title">Mufrodat (Kosakata)</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-1/mufrodzat.jpg" alt="">
+              <p class="mt-3">(Isi mufrodat akan ditambahkan manual di Notepad++.)</p>
+              <div class="content-placeholder">
+                <div class="placeholder-box">Kosakata 1</div>
+                <div class="placeholder-box">Kosakata 2</div>
+                <div class="placeholder-box">Kosakata 3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card material-card">
+          <div class="card-header">
+            <div class="card-icon">📖</div>
+            <h3 class="card-title">Materi</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-1/materi-1.jpg" alt="">
+              <img src="./assets/bab-1/materi-2.jpg" alt="" class="mt-3">
+              <p class="mt-3">(Materi utama akan ditambahkan manual.)</p>
+              <div class="content-placeholder">
+                <div class="placeholder-text-block">Penjelasan materi perkenalan...</div>
+                <div class="placeholder-text-block">Contoh penggunaan...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card conversation-card">
+          <div class="card-header">
+            <div class="card-icon">💬</div>
+            <h3 class="card-title">Hiwar (Percakapan)</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-1/khiwar-1.jpg" alt="">
+              <img src="./assets/bab-1/khiwar-2.jpg" alt="" class="mt-3">
+              <img src="./assets/bab-1/khiwar-3.jpg" alt="" class="mt-3">
+              <div class="audio-player-placeholder mt-3">
+                <audio id="audio-bab1-khiwar" src="./assets/bab-1/audio-khiwar.mp3" preload="metadata"></audio>
+                <div class="audio-controls">
+                  <button class="audio-btn play-pause-btn" data-audio="audio-bab1-khiwar">
+                    <span class="play-icon">▶️</span>
+                    <span class="pause-icon" style="display: none;">⏸️</span>
+                  </button>
+                  <button class="audio-btn stop-btn" data-audio="audio-bab1-khiwar">
+                    ⏹️
+                  </button>
+                  <div class="audio-progress">
+                    <div class="progress-bar" data-audio="audio-bab1-khiwar"></div>
+                  </div>
+                  <div class="audio-time" data-audio="audio-bab1-khiwar" style="font-size: 12px; color: #059669; margin-left: 10px; min-width: 60px;">
+                    0:00 / 0:00
+                  </div>
+                </div>
+                <p class="audio-description">Desc</p>
+              </div>
+              <p class="mt-3">(Hiwar contoh akan ditambahkan manual.)</p>
+              <div class="conversation-illustration">
+                <div class="person-icon">👤</div>
+                <div class="conversation-bubble">السلام عليكم</div>
+                <div class="person-icon">👤</div>
+                <div class="conversation-bubble">وعليكم السلام</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card exercise-card">
+          <div class="card-header">
+            <div class="card-icon">✏️</div>
+            <h3 class="card-title">Tamrin (Latihan)</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-1/tamrin.jpg" alt="">
+              <p class="mt-3">(Soal latihan akan ditambahkan manual.)</p>
+              <div class="exercise-placeholder">
+                <div class="exercise-item">Latihan 1: ___________</div>
+                <div class="exercise-item">Latihan 2: ___________</div>
+                <div class="exercise-item">Latihan 3: ___________</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-navigation">
+        <button class="nav-button back-to-chapters" onclick="backToChapters()">
+          <span>⬅️</span>
+          <span>Kembali ke Menu Bab</span>
+        </button>
+        <button class="nav-button back-to-main" onclick="backToMain()">
+          <span>🏠</span>
+          <span>Kembali ke Main Menu</span>
+        </button>
+      </div>
+      <div class="chapter-footer">
+        <div class="group-label">Kelompok 9</div>
+        <div class="footer-note">Semua konten Bab 1 akan diisi manual melalui Notepad++.</div>
+      </div>
+    </div>
+
+    <!-- Chapter 2 Content -->
+    <div class="chapter-content" id="chapter2">
+      <div class="chapter-header">
+        <h1 class="chapter-main-title">باب ٢ – الأسرة والبيت</h1>
+        <p class="chapter-subtitle">Bab 2 – Keluarga dan Rumah</p>
+        <div class="chapter-note-space">
+          <div class="placeholder-note">(Ruang untuk catatan digital tambahan)</div>
+        </div>
+      </div>
+      <div class="content-sections">
+        <div class="content-card vocabulary-card">
+          <div class="card-header">
+            <div class="card-icon">📚</div>
+            <h3 class="card-title">Mufrodat (Kosakata)</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-2/materi-sampul.jpg" alt="" class="mb-3">
+              <p>(Isi mufrodat akan ditambahkan manual di Notepad++.)</p>
+              <div class="content-placeholder">
+                <div class="placeholder-box">أب (Ayah)</div>
+                <div class="placeholder-box">أم (Ibu)</div>
+                <div class="placeholder-box">بيت (Rumah)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card material-card">
+          <div class="card-header">
+            <div class="card-icon">📖</div>
+            <h3 class="card-title">Materi Ringkas</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-2/sampul-mufrodat.jpg" alt="" class="mb-3">
+              <img src="./assets/bab-2/sampul-mufrodat-2.jpg" alt="" class="mb-3">
+              <p>(Materi utama akan ditambahkan manual di Notepad++.)</p>
+              <div class="content-placeholder">
+                <div class="placeholder-text-block">Penjelasan tentang keluarga...</div>
+                <div class="placeholder-text-block">Struktur rumah dalam bahasa Arab...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card audio-card">
+          <div class="card-header">
+            <div class="card-icon">🎵</div>
+            <h3 class="card-title">Audio Pembelajaran</h3>
+          </div>
+          <div class="card-content">
+            <div class="audio-player-placeholder">
+              <audio id="audio-bab2-tts-1" src="./assets/bab-2/tts-1.mp3" preload="metadata"></audio>
+              <div class="audio-controls">
+                <button class="audio-btn play-pause-btn" data-audio="audio-bab2-tts-1">
+                  <span class="play-icon">▶️</span>
+                  <span class="pause-icon" style="display: none;">⏸️</span>
+                </button>
+                <button class="audio-btn stop-btn" data-audio="audio-bab2-tts-1">
+                  ⏹️
+                </button>
+                <div class="audio-progress">
+                  <div class="progress-bar" data-audio="audio-bab2-tts-1"></div>
+                </div>
+                <div class="audio-time" data-audio="audio-bab2-tts-1" style="font-size: 12px; color: #059669; margin-left: 10px; min-width: 60px;">
+                  0:00 / 0:00
+                </div>
+              </div>
+              <p class="audio-description">Desc</p>
+            </div>
+            <div class="audio-player-placeholder mt-3">
+              <audio id="audio-bab2-tts-2" src="./assets/bab-2/tts-2.mp3" preload="metadata"></audio>
+              <div class="audio-controls">
+                <button class="audio-btn play-pause-btn" data-audio="audio-bab2-tts-2">
+                  <span class="play-icon">▶️</span>
+                  <span class="pause-icon" style="display: none;">⏸️</span>
+                </button>
+                <button class="audio-btn stop-btn" data-audio="audio-bab2-tts-2">
+                  ⏹️
+                </button>
+                <div class="audio-progress">
+                  <div class="progress-bar" data-audio="audio-bab2-tts-2"></div>
+                </div>
+                <div class="audio-time" data-audio="audio-bab2-tts-2" style="font-size: 12px; color: #059669; margin-left: 10px; min-width: 60px;">
+                  0:00 / 0:00
+                </div>
+              </div>
+              <p class="audio-description">Desc</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-navigation">
+        <button class="nav-button back-to-chapters" onclick="backToChapters2()">
+          <span>⬅️</span>
+          <span>Kembali ke Menu Bab</span>
+        </button>
+        <button class="nav-button back-to-main" onclick="backToMain2()">
+          <span>🏠</span>
+          <span>Kembali ke Main Menu</span>
+        </button>
+      </div>
+      <div class="chapter-footer">
+        <div class="group-label">Kelompok 9</div>
+        <div class="footer-note">Semua konten (Mufrodat, Materi, Audio) akan diisi manual.</div>
+      </div>
+    </div>
+
+    <!-- Chapter 3 Content -->
+    <div class="chapter-content" id="chapter3">
+      <div class="chapter-header">
+        <h1 class="chapter-main-title">باب ٣ – المدرسة</h1>
+        <p class="chapter-subtitle">Bab 3 – Sekolah</p>
+        <div class="chapter-note-space">
+          <div class="placeholder-note">(Ruang untuk catatan digital tambahan)</div>
+        </div>
+      </div>
+      <div class="content-sections">
+        <div class="content-card vocabulary-card">
+          <div class="card-header">
+            <div class="card-icon">📚</div>
+            <h3 class="card-title">Mufrodat (Kosakata)</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-3/sampul-mufrodat.png" alt="" class="mb-3">
+              <img src="./assets/bab-3/mufrodat.png" alt="" class="mb-3">
+              <p>(Isi mufrodat akan ditambahkan manual di Notepad++.)</p>
+              <div class="content-placeholder">
+                <div class="placeholder-box">مدرسة (Sekolah)</div>
+                <div class="placeholder-box">معلم (Guru)</div>
+                <div class="placeholder-box">طالب (Siswa)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card material-card">
+          <div class="card-header">
+            <div class="card-icon">📖</div>
+            <h3 class="card-title">Materi Bacaan</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-3/sampul-materi.png" alt="" class="mb-3">
+              <img src="./assets/bab-3/teks.png" alt="" class="mb-3">
+              <p>(Materi bacaan akan ditambahkan manual di Notepad++.)</p>
+              <div class="content-placeholder">
+                <div class="placeholder-text-block">Teks bacaan tentang sekolah...</div>
+                <div class="placeholder-text-block">Aktivitas di sekolah...</div>
+                <div class="placeholder-text-block">Fasilitas sekolah...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card exercise-card">
+          <div class="card-header">
+            <div class="card-icon">✏️</div>
+            <h3 class="card-title">Latihan Soal (Tamrin)</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-3/sampul-soal.png" alt="" class="mb-3">
+              <img src="./assets/bab-3/bab-1-soal-1.png" alt="" class="mb-3">
+              <img src="./assets/bab-3/bab-2-soal-2.png" alt="" class="mb-3">
+              <p>(Soal latihan akan ditambahkan manual di Notepad++.)</p>
+              <div class="exercise-placeholder">
+                <div class="exercise-item">Soal 1: ___________</div>
+                <div class="exercise-item">Soal 2: ___________</div>
+                <div class="exercise-item">Soal 3: ___________</div>
+                <div class="exercise-item">Soal 4: ___________</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-navigation">
+        <button class="nav-button back-to-chapters" onclick="backToChapters3()">
+          <span>⬅️</span>
+          <span>Kembali ke Menu Bab</span>
+        </button>
+        <button class="nav-button back-to-main" onclick="backToMain3()">
+          <span>🏠</span>
+          <span>Kembali ke Main Menu</span>
+        </button>
+      </div>
+      <div class="chapter-footer">
+        <div class="group-label">Kelompok 9</div>
+        <div class="footer-note">Semua konten (Mufrodat, Materi Bacaan, Latihan Soal) akan diisi manual.</div>
+      </div>
+    </div>
+
+    <!-- Chapter 4 Content -->
+    <div class="chapter-content" id="chapter4">
+      <div class="chapter-header">
+        <h1 class="chapter-main-title">باب ٤ – الحياة اليومية</h1>
+        <p class="chapter-subtitle">Bab 4 – Kehidupan Sehari-hari</p>
+        <div class="chapter-note-space">
+          <div class="placeholder-note">(Ruang untuk catatan digital tambahan)</div>
+        </div>
+      </div>
+      <div class="content-sections">
+        <div class="content-card vocabulary-card">
+          <div class="card-header">
+            <div class="card-icon">📚</div>
+            <h3 class="card-title">Mufrodat (Kosakata)</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <p>(Isi mufrodat akan ditambahkan manual di Notepad++.)</p>
+              <div class="content-placeholder">
+                <div class="placeholder-box">يوم (Hari)</div>
+                <div class="placeholder-box">صباح (Pagi)</div>
+                <div class="placeholder-box">مساء (Sore)</div>
+                <div class="placeholder-box">نوم (Tidur)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card material-card">
+          <div class="card-header">
+            <div class="card-icon">📖</div>
+            <h3 class="card-title">Materi Ringkas</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-4/materi-sampul.jpg" alt="" class="mb-3">
+              <p>(Materi utama akan ditambahkan manual di Notepad++.)</p>
+              <div class="content-placeholder">
+                <div class="placeholder-text-block">Aktivitas pagi hari...</div>
+                <div class="placeholder-text-block">Rutinitas harian...</div>
+                <div class="placeholder-text-block">Waktu dan jadwal...</div>
+                <div class="placeholder-text-block">Kegiatan malam hari...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card audio-card">
+          <div class="card-header">
+            <div class="card-icon">🎵</div>
+            <h3 class="card-title">Audio Pembelajaran</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <p>(File audio akan dimasukkan manual di Notepad++.)</p>
+              <div class="audio-player-placeholder">
+                <audio id="audio-bab4-fiks" src="./assets/bab-4/fiks.mp3" preload="metadata"></audio>
+                <div class="audio-controls">
+                  <button class="audio-btn play-pause-btn" data-audio="audio-bab4-fiks">
+                    <span class="play-icon">▶️</span>
+                    <span class="pause-icon" style="display: none;">⏸️</span>
+                  </button>
+                  <button class="audio-btn stop-btn" data-audio="audio-bab4-fiks">
+                    ⏹️
+                  </button>
+                  <div class="audio-progress">
+                    <div class="progress-bar" data-audio="audio-bab4-fiks"></div>
+                  </div>
+                  <div class="audio-time" data-audio="audio-bab4-fiks" style="font-size: 12px; color: #059669; margin-left: 10px; min-width: 60px;">
+                    0:00 / 0:00
+                  </div>
+                </div>
+                <p class="audio-description">Audio pelafalan aktivitas kehidupan sehari-hari</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card video-card">
+          <div class="card-header">
+            <div class="card-icon">📀</div>
+            <h3 class="card-title">Video Pembelajaran</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <video class="w-full mb-3" controls>
+                <source src="./assets/bab-4/hayah-yaumiyah.mp4" type="video/mp4">
+              </video>
+              <p>(File video akan dimasukkan manual di Notepad++.)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-navigation">
+        <button class="nav-button back-to-chapters" onclick="backToChapters4()">
+          <span>⬅️</span>
+          <span>Kembali ke Menu Bab</span>
+        </button>
+        <button class="nav-button back-to-main" onclick="backToMain4()">
+          <span>🏠</span>
+          <span>Kembali ke Main Menu</span>
+        </button>
+      </div>
+      <div class="chapter-footer">
+        <div class="group-label">Kelompok 9</div>
+        <div class="footer-note">Semua konten (Mufrodat, Materi, Audio) akan diisi manual.</div>
+      </div>
+    </div>
+
+    <!-- Chapter 5 Content -->
+    <div class="chapter-content" id="chapter5">
+      <div class="chapter-header">
+        <h1 class="chapter-main-title">باب ٥ – الهوايات</h1>
+        <p class="chapter-subtitle">Bab 5 – Hobi</p>
+        <div class="chapter-note-space">
+          <div class="placeholder-note">(Ruang untuk catatan digital tambahan)</div>
+        </div>
+      </div>
+      <div class="content-sections">
+        <div class="content-card vocabulary-card">
+          <div class="card-header">
+            <div class="card-icon">📚</div>
+            <h3 class="card-title">Mufrodat (Kosakata)</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-5/mufrodat.jpg" alt="" class="mb-3">
+              <p>(Isi mufrodat akan ditambahkan manual di Notepad++.)</p>
+              <div class="content-placeholder">
+                <div class="placeholder-box">هواية (Hobi)</div>
+                <div class="placeholder-box">قراءة (Membaca)</div>
+                <div class="placeholder-box">رياضة (Olahraga)</div>
+                <div class="placeholder-box">موسيقى (Musik)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card material-card">
+          <div class="card-header">
+            <div class="card-icon">📖</div>
+            <h3 class="card-title">Materi Ringkas</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-5/teks.jpg" alt="" class="mb-3">
+              <p>(Materi utama akan ditambahkan manual di Notepad++.)</p>
+              <div class="content-placeholder">
+                <div class="placeholder-text-block">Jenis-jenis hobi...</div>
+                <div class="placeholder-text-block">Aktivitas seni dan budaya...</div>
+                <div class="placeholder-text-block">Olahraga dan permainan...</div>
+                <div class="placeholder-text-block">Hobi kreatif...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card audio-card">
+          <div class="card-header">
+            <div class="card-icon">🎵</div>
+            <h3 class="card-title">Audio Pembelajaran</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <div class="audio-player-placeholder">
+                <audio id="audio-bab5-audio-istima" src="./assets/bab-5/audio-istima.mp3" preload="metadata"></audio>
+                <div class="audio-controls">
+                  <button class="audio-btn play-pause-btn" data-audio="audio-bab5-audio-istima">
+                    <span class="play-icon">▶️</span>
+                    <span class="pause-icon" style="display: none;">⏸️</span>
+                  </button>
+                  <button class="audio-btn stop-btn" data-audio="audio-bab5-audio-istima">
+                    ⏹️
+                  </button>
+                  <div class="audio-progress">
+                    <div class="progress-bar" data-audio="audio-bab5-audio-istima"></div>
+                  </div>
+                  <div class="audio-time" data-audio="audio-bab5-audio-istima" style="font-size: 12px; color: #059669; margin-left: 10px; min-width: 60px;">
+                    0:00 / 0:00
+                  </div>
+                </div>
+                <p class="audio-description">Audio pelafalan kosakata hobi dan aktivitas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card conversation-card">
+          <div class="card-header">
+            <div class="card-icon">📚</div>
+            <h3 class="card-title">Materi Bacaan</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-5/bacaan.png" alt="" class="mb-3">
+              <p>(Materi bacaan akan ditambahkan manual di Notepad++.)</p>
+              <div class="content-placeholder">
+                <div class="placeholder-text-block">Teks bacaan tentang hobi...</div>
+                <div class="placeholder-text-block">Cerita aktivitas favorit...</div>
+                <div class="placeholder-text-block">Manfaat memiliki hobi...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card exercise-card">
+          <div class="card-header">
+            <div class="card-icon">📝</div>
+            <h3 class="card-title">Qowaid (Tata Bahasa)</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-5/alqowaid.jpg" alt="" class="mb-3">
+              <p>(Materi qowaid akan ditambahkan manual di Notepad++.)</p>
+              <div class="content-placeholder">
+                <div class="placeholder-text-block">Struktur kalimat tentang hobi...</div>
+                <div class="placeholder-text-block">Penggunaan kata kerja aktivitas...</div>
+                <div class="placeholder-text-block">Pola kalimat preferensi...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-navigation">
+        <button class="nav-button back-to-chapters" onclick="backToChapters5()">
+          <span>⬅️</span>
+          <span>Kembali ke Menu Bab</span>
+        </button>
+        <button class="nav-button back-to-main" onclick="backToMain5()">
+          <span>🏠</span>
+          <span>Kembali ke Main Menu</span>
+        </button>
+      </div>
+      <div class="chapter-footer">
+        <div class="group-label">Kelompok 9</div>
+        <div class="footer-note">Semua konten (Mufrodat, Materi, Audio, Materi Bacaan, Qowaid) akan diisi manual.</div>
+      </div>
+    </div>
+
+    <!-- Chapter 6 Content -->
+    <div class="chapter-content" id="chapter6">
+      <div class="chapter-header">
+        <h1 class="chapter-main-title">باب ٦ – الطعام والشراب</h1>
+        <p class="chapter-subtitle">Bab 6 – Makanan dan Minuman</p>
+        <div class="chapter-note-space">
+          <div class="placeholder-note">(Ruang untuk catatan digital tambahan)</div>
+        </div>
+      </div>
+      <div class="content-sections">
+        <div class="content-card vocabulary-card">
+          <div class="card-header">
+            <div class="card-icon">📚</div>
+            <h3 class="card-title">Mufrodat (Kosakata)</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-6/mufrodat.jpg" alt="" class="mb-3">
+              <p>(Isi mufrodat akan ditambahkan manual di Notepad++.)</p>
+              <div class="content-placeholder">
+                <div class="placeholder-box">طعام (Makanan)</div>
+                <div class="placeholder-box">شراب (Minuman)</div>
+                <div class="placeholder-box">أرز (Nasi)</div>
+                <div class="placeholder-box">ماء (Air)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card audio-card">
+          <div class="card-header">
+            <div class="card-icon">🎵</div>
+            <h3 class="card-title">Audio Pembelajaran</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <div class="audio-player-placeholder">
+                <audio id="audio-bab6-audio-istima" src="./assets/bab-6/audio-istima.mp3" preload="metadata"></audio>
+                <div class="audio-controls">
+                  <button class="audio-btn play-pause-btn" data-audio="audio-bab6-audio-istima">
+                    <span class="play-icon">▶️</span>
+                    <span class="pause-icon" style="display: none;">⏸️</span>
+                  </button>
+                  <button class="audio-btn stop-btn" data-audio="audio-bab6-audio-istima">
+                    ⏹️
+                  </button>
+                  <div class="audio-progress">
+                    <div class="progress-bar" data-audio="audio-bab6-audio-istima"></div>
+                  </div>
+                  <div class="audio-time" data-audio="audio-bab6-audio-istima" style="font-size: 12px; color: #059669; margin-left: 10px; min-width: 60px;">
+                    0:00 / 0:00
+                  </div>
+                </div>
+                <p class="audio-description">Audio pelafalan kosakata makanan dan minuman</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card conversation-card">
+          <div class="card-header">
+            <div class="card-icon">📚</div>
+            <h3 class="card-title">Teks Bacaan</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-6/bacaan.png" alt="" class="mb-3">
+              <img src="./assets/bab-6/tambahkan-sedikit-teks.png" alt="" class="mb-3">
+              <p>(Teks bacaan akan ditambahkan manual di Notepad++.)</p>
+              <div class="content-placeholder">
+                <div class="placeholder-text-block">Teks bacaan tentang makanan...</div>
+                <div class="placeholder-text-block">Cerita tentang minuman favorit...</div>
+                <div class="placeholder-text-block">Tradisi makanan Arab...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card material-card">
+          <div class="card-header">
+            <div class="card-icon">📝</div>
+            <h3 class="card-title">Materi Qowaid (Tata Bahasa)</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-6/materi-isi-ma-rifat-dan-nakiroh.jpg" alt="" class="mb-3">
+              <img src="./assets/bab-6/ciri-ma-rifat-dan-nakiroh.jpg" alt="" class="mb-3">
+              <p>(Materi qowaid akan ditambahkan manual di Notepad++.)</p>
+              <div class="content-placeholder">
+                <div class="placeholder-text-block">Struktur kalimat tentang makanan...</div>
+                <div class="placeholder-text-block">Penggunaan kata sifat rasa...</div>
+                <div class="placeholder-text-block">Pola kalimat preferensi makanan...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card exercise-card">
+          <div class="card-header">
+            <div class="card-icon">✏️</div>
+            <h3 class="card-title">Soal / Latihan</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <img src="./assets/bab-6/soal.png" alt="" class="mb-3">
+              <p>(Soal latihan akan ditambahkan manual di Notepad++.)</p>
+              <div class="exercise-placeholder">
+                <div class="exercise-item">Soal 1: ___________</div>
+                <div class="exercise-item">Soal 2: ___________</div>
+                <div class="exercise-item">Soal 3: ___________</div>
+                <div class="exercise-item">Soal 4: ___________</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-navigation">
+        <button class="nav-button back-to-chapters" onclick="backToChapters6()">
+          <span>⬅️</span>
+          <span>Kembali ke Menu Bab</span>
+        </button>
+        <button class="nav-button back-to-main" onclick="backToMain6()">
+          <span>🏠</span>
+          <span>Kembali ke Main Menu</span>
+        </button>
+      </div>
+      <div class="chapter-footer">
+        <div class="group-label">Kelompok 9</div>
+        <div class="footer-note">Semua konten (Mufrodat, Audio, Teks Bacaan, Materi Qowaid, Soal) akan diisi manual.</div>
+      </div>
+    </div>
+
+    <!-- Chapter 7 Content -->
+    <div class="chapter-content" id="chapter7">
+      <div class="chapter-header">
+        <h1 class="chapter-main-title">باب ٧ – الامتحان</h1>
+        <p class="chapter-subtitle">Bab 7 – Evaluasi</p>
+        <div class="chapter-note-space">
+          <div class="placeholder-note">(Ruang untuk catatan digital tambahan)</div>
+        </div>
+      </div>
+      <div class="content-sections">
+        <div class="content-card material-card">
+          <div class="card-header">
+            <div class="card-icon">🔗</div>
+            <h3 class="card-title">Link Evaluasi 1</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <p>(Link akan ditambahkan manual di Notepad++.)</p>
+              <div class="link-placeholder">
+                <div class="link-box">
+                  <div class="link-icon">📄</div>
+                  <div class="link-text">Evaluasi Bab 1-2</div>
+                  <div class="link-description">Link evaluasi untuk bab perkenalan dan keluarga</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card vocabulary-card">
+          <div class="card-header">
+            <div class="card-icon">🔗</div>
+            <h3 class="card-title">Link Evaluasi 2</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <p>(Link akan ditambahkan manual di Notepad++.)</p>
+              <div class="link-placeholder">
+                <div class="link-box">
+                  <div class="link-icon">📄</div>
+                  <div class="link-text">Evaluasi Bab 3-4</div>
+                  <div class="link-description">Link evaluasi untuk bab sekolah dan kehidupan sehari-hari</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card conversation-card">
+          <div class="card-header">
+            <div class="card-icon">🔗</div>
+            <h3 class="card-title">Link Evaluasi 3</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <p>(Link akan ditambahkan manual di Notepad++.)</p>
+              <div class="link-placeholder">
+                <div class="link-box">
+                  <div class="link-icon">📄</div>
+                  <div class="link-text">Evaluasi Bab 5-6</div>
+                  <div class="link-description">Link evaluasi untuk bab hobi dan makanan-minuman</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card exercise-card">
+          <div class="card-header">
+            <div class="card-icon">🔗</div>
+            <h3 class="card-title">Link Evaluasi 4</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <p>(Link akan ditambahkan manual di Notepad++.)</p>
+              <div class="link-placeholder">
+                <div class="link-box">
+                  <div class="link-icon">📊</div>
+                  <div class="link-text">Evaluasi Komprehensif</div>
+                  <div class="link-description">Link evaluasi menyeluruh semua bab pembelajaran</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card audio-card">
+          <div class="card-header">
+            <div class="card-icon">🔗</div>
+            <h3 class="card-title">Link Evaluasi 5</h3>
+          </div>
+          <div class="card-content">
+            <div class="placeholder-content">
+              <p>(Link akan ditambahkan manual di Notepad++.)</p>
+              <div class="link-placeholder">
+                <div class="link-box">
+                  <div class="link-icon">🎯</div>
+                  <div class="link-text">Materi Tambahan</div>
+                  <div class="link-description">Link ke sumber belajar dan referensi tambahan</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-navigation">
+        <button class="nav-button back-to-chapters" onclick="backToChapters7()">
+          <span>⬅️</span>
+          <span>Kembali ke Menu Bab</span>
+        </button>
+        <button class="nav-button back-to-main" onclick="backToMain7()">
+          <span>🏠</span>
+          <span>Kembali ke Main Menu</span>
+        </button>
+      </div>
+      <div class="chapter-footer">
+        <div class="group-label">Kelompok 9</div>
+        <div class="footer-note">Semua kolom link akan diisi manual di Notepad++.</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
